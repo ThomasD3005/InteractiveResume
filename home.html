@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="row">
+        <div class="UserColumn">
+          <div class="UserCard">
+            <link rel="stylesheet" href="user.css">
+            <h2> Applicant Name</h2>
+            <img id="profilePic" src="stockphoto.jpg">
+           <p>Applicant Information</p>
+           <p>Title</p>
+           <p> Skills</p>
+           <p>Brief Summary / Description</p>
+          </div>
+        </div>
+
+        <div class="GameColumn">
+          <div class="GameCard">
+            <link rel="stylesheet" href="game.css">
+            <h2>Game Applications</h2>
+            <div id="gameContainer">
+                <h3>Tic-Tac-Toe</h3>
+                <div id="cellContainer">
+                    <div cellIndex="0" class="cell"></div>
+                    <div cellIndex="1" class="cell"></div>
+                    <div cellIndex="2" class="cell"></div>  
+                    <div cellIndex="3" class="cell"></div>  
+                    <div cellIndex="4" class="cell"></div>   
+                    <div cellIndex="5" class="cell"></div>
+                    <div cellIndex="6" class="cell"></div> 
+                    <div cellIndex="7" class="cell"></div>  
+                    <div cellIndex="8" class="cell"></div>
+                </div>
+                <h2 id="statusText"></h2>
+                <button id="restartBtn">Restart</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="UtilColumn">
+          <div class="UtilCard">
+            <link rel="stylesheet" href="util.css">
+            <h2>Utility Applications</h2>
+            <div class="weatherAppContainer">
+                <div class="icon"> --- </div>
+                <div class="temp"> -℃</div>
+                <div class="summary"> ----- </div>
+                <div class="location"> </div>
+            </div>
+
+          </div>
+        </div>
+      </div> 
+     <script src="gameCard.js" ></script>
+     <script src="utilCard.js"></script>
+</body>
+</html>
